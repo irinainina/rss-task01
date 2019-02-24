@@ -17,18 +17,19 @@ div {
   height: 300px;
   transform: rotate(45deg);
   border: 2px solid #050802;
-  box-shadow: inset 150px -150px 0 #9add43;
+  background: 
+    linear-gradient(#9add43, #9add43) 0 0,
+    linear-gradient(#9add43, #9add43) 100% 100%,
+    linear-gradient(green, green) 0 100%;   
+  background-size: 150px 150px;
+  background-repeat: no-repeat;
+  outline: 8px ridge #00b81a;
+  outline-offset: -85px;
+  -moz-outline-radius: 50%;
 }
 
-div:before {
-  content: "";
-  top: 150px;
-  position: absolute;
-  width: 150px;
-  height: 150px;
-  background-color: green;
-}
 
+/*
 div:after {
   content: "";
   position: absolute;
@@ -41,3 +42,5 @@ div:after {
   border: 8px ridge #00b81a;
   transform: rotate(-45deg);
 }
+
+*/
